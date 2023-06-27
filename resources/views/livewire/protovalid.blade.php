@@ -11,8 +11,8 @@
                     <th> Email</th>
                     <th> Adresse</th>
                     <th> Crée le</th>
-                    <th> Validation du chef protocole</th>
-                    <th> Validation du DG</th>
+                    <th></th>
+                    <th></th>
                 
                 </tr>
             </thead>
@@ -28,8 +28,16 @@
                     <td> {{$invite->email}} </td>
                     <td> {{$invite->adress}} </td>
                     <td> {{$invite->created_at}} </td>
-                    <td> {{$invite->valid1}} </td>
-                    <td> {{$invite->valide2}} </td>
+                    <td>
+
+                    <button type="button" class="btn btn-success">Validé</button>
+                    
+
+                    </td>
+
+                    <td>
+                    <button type="button" class="btn btn-danger">Refuser</button>
+                    </td>
                 </tr>
                 @endforeach
                 

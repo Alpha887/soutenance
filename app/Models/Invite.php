@@ -5,21 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+
 class Invite extends Model
 {
+    public $invite;
     use HasFactory;
 
-      /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
-
     protected $fillable = [
-        'nom',
-        'prenom',
+        'name',
+        'prenoms',
         'email',
-        'photo',
         'societe',
         'adress',
 

@@ -22,11 +22,11 @@
                 <tr>
                     
                     <td> {{$invite->id}} </td>
-                    <td> {{$invite->nom}} </td>
+                    <td> {{$invite->name}} </td>
                     <td> {{$invite->prenoms}} </td>
                     <td> {{$invite->societe}} </td>
                     <td> {{$invite->email}} </td>
-                    <td> {{$invite->adress}} </td>
+                    <td> {{$invite->adresse}} </td>
                     <td> {{$invite->created_at}} </td>
                     <td> {{$invite->valid1}} </td>
                     <td> {{$invite->valide2}} </td>

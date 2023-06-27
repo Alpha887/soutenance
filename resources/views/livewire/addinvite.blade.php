@@ -9,9 +9,9 @@
             <form wire:submit.prevent="join">
                 @csrf
                 <div class="mb-3">
-                    <label for="nom" class="form-label">Nom</label>
-                    <input type="text" class="form-control" wire:model="nom" placeholder="Entrez le nom de l'administrateur" aria-describedby="nom" required>
-                    @error('nom')
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" wire:model="name" placeholder="Entrez le nom de l'administrateur" aria-describedby="name" required>
+                    @error('name')
                     <div class="form-text" style="color: red;">{{ $message }}</div>
                     @enderror
                 </div>

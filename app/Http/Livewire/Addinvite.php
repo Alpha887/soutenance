@@ -11,7 +11,7 @@ use App\Models\Invite;
 class Addinvite extends Component
 {
 
-    public $nom;
+    public $name;
     public $prenom;
     public $email;
     public $photo;
@@ -22,16 +22,16 @@ class Addinvite extends Component
 
 
     protected $rules = [ 
-        'nom' => 'required',
+        'name' => 'required',
         'prenom' => 'required',
         'photo' => 'required',
-        'email' => 'required|email|unique:invite',
+        'email' => 'required|email|unique:invites',
         'societe' => 'required',
         'adress' => 'required',
     ];
 
     protected $messages = [
-        'nom.required' => 'Veuillez renseigner le nom.',
+        'name.required' => 'Veuillez renseigner le nom.',
         'prenom.required' => 'Veuillez renseigner le prénom.',
         'photo.required' => 'Veuillez uploader votre photo.',
         'email.required' => 'L\'adresse Email est requis.',
@@ -53,7 +53,7 @@ class Addinvite extends Component
         $validatedData = $this->validate();
 
         $newInvite = new Invite;
-        $newInvite->nom = $validatedData['nom'];
+        $newInvite->name = $validatedData['name'];
         $newInvite->prenoms= $validatedData['prenom'];
         $newInvite->email = $validatedData['email'];
         $newInvite->photo = $validatedData['photo'];

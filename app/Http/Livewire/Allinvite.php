@@ -9,12 +9,12 @@ use App\Models\Invite;
 
 class Allinvite extends Component
 {
-    public $invites;
+    public $invite;
 
     public function render()
     {
 
-        $this->invite = Invite::all();
+        $this->invites = Invite::all();
         return view('livewire.allinvite', [
             'invite' => $this->invite,
         ]);
