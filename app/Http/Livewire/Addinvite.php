@@ -33,7 +33,7 @@ class Addinvite extends Component
     protected $messages = [
         'name.required' => 'Veuillez renseigner le nom.',
         'prenom.required' => 'Veuillez renseigner le prénom.',
-        'photo.required' => 'Veuillez uploader votre photo.',
+        //'photo.required' => 'Veuillez uploader votre photo.',
         'email.required' => 'L\'adresse Email est requis.',
         'email.email' => 'Veuillez entrer une adresse électronique valide.',
         'email.unique' => 'Cette adresse Email est déjà utilisée.',
