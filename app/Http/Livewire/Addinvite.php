@@ -24,7 +24,7 @@ class Addinvite extends Component
     protected $rules = [ 
         'name' => 'required',
         'prenom' => 'required',
-        'photo' => 'required',
+        //'photo' => 'required',
         'email' => 'required|email|unique:invites',
         'societe' => 'required',
         'adress' => 'required',
