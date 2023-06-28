@@ -7,6 +7,9 @@ Accueil
 
 @section('content')
 
+
+<img src="1.jpg" class="img-fluid" alt="Responsive image">
+
 <section class="bg-half-170 bg-soft-primary d-table w-100">
 
 
