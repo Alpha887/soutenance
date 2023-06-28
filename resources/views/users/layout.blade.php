@@ -130,7 +130,7 @@
           </li>
 
 
-          <li class="nav-item menu-items">
+          <!--li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
                 <i class="mdi mdi-laptop"></i>
@@ -145,38 +145,38 @@
                 <li class="nav-item"> <a class="nav-link" href="#">Dossiers rejeté</a></li>
               </ul>
             </div>
-          </li>
+          </li-->
 
 
-          <li class="nav-item menu-items">
+          <!--li class="nav-item menu-items">
             <a class="nav-link" href="pages/forms/basic_elements.html">
               <span class="menu-icon">
                 <i class="mdi mdi-playlist-play"></i>
               </span>
               <span class="menu-title">Crée un dossier</span>
             </a>
-          </li>
+          </li-->
 
 
 
-          <li class="nav-item menu-items">
+          <!--li class="nav-item menu-items">
             <a class="nav-link" href="pages/tables/basic-table.html">
               <span class="menu-icon">
                 <i class="mdi mdi-table-large"></i>
               </span>
               <span class="menu-title">Chercher un dossier</span>
             </a>
-          </li>
+          </li-->
 
 
-          <li class="nav-item menu-items" >
+          <!--li class="nav-item menu-items" >
             <a href="{{ route('user_affiliates') }}" class="nav-link" style=" @if( Request::path() == "user/my-affiliates" ) background-color: white; @else background-color: transparent;@endif " >
               <span class="menu-icon">
                 <i class="mdi mdi-account-multiple"></i>
               </span>
               <span class="menu-title" style=" @if( Request::path() == "user/my-affiliates" ) color: black; @else color: white ;@endif ">Crée une entreprise</span>
             </a>
-          </li>
+          </li-->
 
 
 
