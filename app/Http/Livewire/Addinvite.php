@@ -14,9 +14,10 @@ class Addinvite extends Component
     public $name;
     public $prenom;
     public $email;
-    public $photo;
     public $societe;
     public $adress;
+
+    public $photo;
     public $failed;
     public $success;
 
@@ -24,7 +25,7 @@ class Addinvite extends Component
     protected $rules = [ 
         'name' => 'required',
         'prenom' => 'required',
-        'photo' => 'required',
+        //'photo' => 'required',
         'email' => 'required|email|unique:invites',
         'societe' => 'required',
         'adress' => 'required',
@@ -37,7 +38,8 @@ class Addinvite extends Component
         'email.required' => 'L\'adresse Email est requis.',
         'email.email' => 'Veuillez entrer une adresse électronique valide.',
         'email.unique' => 'Cette adresse Email est déjà utilisée.',
-        //'adress.required' => 'Veillez renseigner votre adresse.',
+        'adress.required' => 'Veillez renseigner votre adresse.',
+        'societe.required' => 'Veuillez renseigner la société.',
         
     ];
 
@@ -56,7 +58,7 @@ class Addinvite extends Component
         $newInvite->name = $validatedData['name'];
         $newInvite->prenoms= $validatedData['prenom'];
         $newInvite->email = $validatedData['email'];
-        $newInvite->photo = $validatedData['photo'];
+        //$newInvite->photo = $validatedData['photo'];
         $newInvite->societe = $validatedData['societe'];
         $newInvite->adress = $validatedData['adress'];
         
